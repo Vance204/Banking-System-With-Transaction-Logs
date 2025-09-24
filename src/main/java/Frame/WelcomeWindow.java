@@ -4,6 +4,8 @@
  */
 package Frame;
 
+import java.awt.EventQueue;
+import javax.swing.JOptionPane;
 /**
  *
  * @author ORTEGA
@@ -82,12 +84,12 @@ public class WelcomeWindow extends javax.swing.JFrame {
         Parent.setPreferredSize(new java.awt.Dimension(402, 437));
         Parent.setLayout(new java.awt.CardLayout());
 
-        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Frame 1.png"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FrameBackground/Frame 1.png"))); // NOI18N
         background.setIconTextGap(0);
         mainLayeredPane.add(background);
         background.setBounds(0, 0, 402, 437);
 
-        exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/closeIcon.png"))); // NOI18N
+        exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/closeIcon.png"))); // NOI18N
         exitButton.setBorder(null);
         exitButton.setContentAreaFilled(false);
         exitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -104,7 +106,7 @@ public class WelcomeWindow extends javax.swing.JFrame {
         exitButton.setBounds(370, 10, 30, 30);
 
         bankLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bankLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BankLogo.png"))); // NOI18N
+        bankLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BankImages/BankLogo.png"))); // NOI18N
         mainLayeredPane.setLayer(bankLogo, javax.swing.JLayeredPane.PALETTE_LAYER);
         mainLayeredPane.add(bankLogo);
         bankLogo.setBounds(70, 20, 280, 150);
@@ -132,7 +134,7 @@ public class WelcomeWindow extends javax.swing.JFrame {
         mainLayeredPane.add(Text1);
         Text1.setBounds(60, 250, 220, 30);
 
-        createAccountButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/button1.png"))); // NOI18N
+        createAccountButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/button1.png"))); // NOI18N
         createAccountButton.setBorder(null);
         createAccountButton.setContentAreaFilled(false);
         createAccountButton.addActionListener(new java.awt.event.ActionListener() {
@@ -144,7 +146,7 @@ public class WelcomeWindow extends javax.swing.JFrame {
         mainLayeredPane.add(createAccountButton);
         createAccountButton.setBounds(80, 350, 250, 40);
 
-        signInButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/button1.png"))); // NOI18N
+        signInButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/button1.png"))); // NOI18N
         signInButton.setBorder(null);
         signInButton.setContentAreaFilled(false);
         signInButton.addActionListener(new java.awt.event.ActionListener() {
@@ -174,12 +176,12 @@ public class WelcomeWindow extends javax.swing.JFrame {
 
         signIn.setMinimumSize(new java.awt.Dimension(402, 437));
 
-        background1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Frame 1.png"))); // NOI18N
+        background1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FrameBackground/Frame 1.png"))); // NOI18N
         background1.setIconTextGap(0);
         signIn.add(background1);
         background1.setBounds(0, 0, 402, 437);
 
-        exitButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/closeIcon.png"))); // NOI18N
+        exitButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/closeIcon.png"))); // NOI18N
         exitButton1.setBorder(null);
         exitButton1.setContentAreaFilled(false);
         exitButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -196,12 +198,12 @@ public class WelcomeWindow extends javax.swing.JFrame {
         exitButton1.setBounds(370, 10, 30, 30);
 
         bankLogo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bankLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BankLogoSmall.png"))); // NOI18N
+        bankLogo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BankImages/BankLogoSmall.png"))); // NOI18N
         signIn.setLayer(bankLogo1, javax.swing.JLayeredPane.PALETTE_LAYER);
         signIn.add(bankLogo1);
         bankLogo1.setBounds(70, 40, 280, 70);
 
-        passwordFieldBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/inputFieldBackground.png"))); // NOI18N
+        passwordFieldBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/inputFieldBackground.png"))); // NOI18N
         passwordFieldBG.setBorder(null);
         passwordFieldBG.setContentAreaFilled(false);
         signIn.setLayer(passwordFieldBG, javax.swing.JLayeredPane.PALETTE_LAYER);
@@ -227,7 +229,7 @@ public class WelcomeWindow extends javax.swing.JFrame {
         signIn.add(loginUserNameTextField);
         loginUserNameTextField.setBounds(90, 190, 230, 20);
 
-        backToMain.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonSmall.png"))); // NOI18N
+        backToMain.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/buttonSmall.png"))); // NOI18N
         backToMain.setBorder(null);
         backToMain.setContentAreaFilled(false);
         backToMain.addActionListener(new java.awt.event.ActionListener() {
@@ -239,16 +241,21 @@ public class WelcomeWindow extends javax.swing.JFrame {
         signIn.add(backToMain);
         backToMain.setBounds(80, 300, 120, 40);
 
-        passwordFieldBG1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/inputFieldBackground.png"))); // NOI18N
+        passwordFieldBG1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/inputFieldBackground.png"))); // NOI18N
         passwordFieldBG1.setBorder(null);
         passwordFieldBG1.setContentAreaFilled(false);
         signIn.setLayer(passwordFieldBG1, javax.swing.JLayeredPane.PALETTE_LAYER);
         signIn.add(passwordFieldBG1);
         passwordFieldBG1.setBounds(80, 180, 250, 40);
 
-        signInButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonSmall.png"))); // NOI18N
+        signInButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/buttonSmall.png"))); // NOI18N
         signInButton3.setBorder(null);
         signInButton3.setContentAreaFilled(false);
+        signInButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logInActionPerformed(evt);
+            }
+        });
         signIn.setLayer(signInButton3, javax.swing.JLayeredPane.PALETTE_LAYER);
         signIn.add(signInButton3);
         signInButton3.setBounds(210, 300, 120, 40);
@@ -277,7 +284,7 @@ public class WelcomeWindow extends javax.swing.JFrame {
         userNameLabel.setBounds(90, 170, 230, 20);
 
         signInTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signInTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/signInTitle.png"))); // NOI18N
+        signInTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/signInTitle.png"))); // NOI18N
         signIn.setLayer(signInTitle, javax.swing.JLayeredPane.PALETTE_LAYER);
         signIn.add(signInTitle);
         signInTitle.setBounds(90, 120, 230, 30);
@@ -286,12 +293,12 @@ public class WelcomeWindow extends javax.swing.JFrame {
 
         createAccount.setMinimumSize(new java.awt.Dimension(402, 437));
 
-        background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Frame 1.png"))); // NOI18N
+        background2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/FrameBackground/Frame 1.png"))); // NOI18N
         background2.setIconTextGap(0);
         createAccount.add(background2);
         background2.setBounds(0, 0, 402, 437);
 
-        exitButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/closeIcon.png"))); // NOI18N
+        exitButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/closeIcon.png"))); // NOI18N
         exitButton2.setBorder(null);
         exitButton2.setContentAreaFilled(false);
         exitButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -308,12 +315,12 @@ public class WelcomeWindow extends javax.swing.JFrame {
         exitButton2.setBounds(370, 10, 30, 30);
 
         bankLogo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        bankLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BankLogoSmall.png"))); // NOI18N
+        bankLogo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/BankImages/BankLogoSmall.png"))); // NOI18N
         createAccount.setLayer(bankLogo2, javax.swing.JLayeredPane.PALETTE_LAYER);
         createAccount.add(bankLogo2);
         bankLogo2.setBounds(70, 40, 280, 70);
 
-        passwordFieldBG2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/inputFieldBackground.png"))); // NOI18N
+        passwordFieldBG2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/inputFieldBackground.png"))); // NOI18N
         passwordFieldBG2.setBorder(null);
         passwordFieldBG2.setContentAreaFilled(false);
         createAccount.setLayer(passwordFieldBG2, javax.swing.JLayeredPane.PALETTE_LAYER);
@@ -339,7 +346,7 @@ public class WelcomeWindow extends javax.swing.JFrame {
         createAccount.add(createUserNameTextField);
         createUserNameTextField.setBounds(90, 190, 230, 20);
 
-        backToMain1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonSmall.png"))); // NOI18N
+        backToMain1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/buttonSmall.png"))); // NOI18N
         backToMain1.setBorder(null);
         backToMain1.setContentAreaFilled(false);
         backToMain1.addActionListener(new java.awt.event.ActionListener() {
@@ -351,16 +358,21 @@ public class WelcomeWindow extends javax.swing.JFrame {
         createAccount.add(backToMain1);
         backToMain1.setBounds(80, 300, 120, 40);
 
-        passwordFieldBG3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/inputFieldBackground.png"))); // NOI18N
+        passwordFieldBG3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/inputFieldBackground.png"))); // NOI18N
         passwordFieldBG3.setBorder(null);
         passwordFieldBG3.setContentAreaFilled(false);
         createAccount.setLayer(passwordFieldBG3, javax.swing.JLayeredPane.PALETTE_LAYER);
         createAccount.add(passwordFieldBG3);
         passwordFieldBG3.setBounds(80, 180, 250, 40);
 
-        signInButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/buttonSmall.png"))); // NOI18N
+        signInButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/buttonSmall.png"))); // NOI18N
         signInButton4.setBorder(null);
         signInButton4.setContentAreaFilled(false);
+        signInButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accountCreationSuccess(evt);
+            }
+        });
         createAccount.setLayer(signInButton4, javax.swing.JLayeredPane.PALETTE_LAYER);
         createAccount.add(signInButton4);
         signInButton4.setBounds(210, 300, 120, 40);
@@ -389,7 +401,7 @@ public class WelcomeWindow extends javax.swing.JFrame {
         userNameLabel1.setBounds(90, 170, 230, 20);
 
         createAccountTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        createAccountTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/createAccountTitle.png"))); // NOI18N
+        createAccountTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Miscellaneous/createAccountTitle.png"))); // NOI18N
         createAccount.setLayer(createAccountTitle, javax.swing.JLayeredPane.PALETTE_LAYER);
         createAccount.add(createAccountTitle);
         createAccountTitle.setBounds(80, 110, 250, 40);
@@ -437,6 +449,25 @@ public class WelcomeWindow extends javax.swing.JFrame {
         createUserNameTextField.setText("");
         createPasswordField.setText("");
     }//GEN-LAST:event_createAccountActionPerformed
+
+    private void logInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logInActionPerformed
+        // TODO add your handling code here:
+        dispose();
+        EventQueue.invokeLater(() -> new MainMenu().setVisible(true));
+    }//GEN-LAST:event_logInActionPerformed
+
+    private void accountCreationSuccess(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountCreationSuccess
+        // TODO add your handling code here:
+        createUserNameTextField.setText("");
+        createPasswordField.setText("");
+        JOptionPane.showMessageDialog(null, "Success!");
+        
+        Parent.removeAll();
+        Parent.add(mainLayeredPane);
+        Parent.repaint();
+        Parent.revalidate();
+        
+    }//GEN-LAST:event_accountCreationSuccess
 
     /**
      * @param args the command line arguments
